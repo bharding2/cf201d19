@@ -48,7 +48,7 @@ CookieStore.prototype.getAvgCookieCount = function() {
 var hourlyCookies = [50, 100, 45, 23, 7];
 
 var pikePlace = new CookieStore('pike place', 23, 65, 6.3, hourlyCookies);
-var otherStore = new CookieStore('other store', 100, 200, 10.0, hourlyCookies);
+var otherStore = new CookieStore('other store', 100, 200, 10.0);
 
 pikePlace.getAvgCookieCount();
 otherStore.getAvgCookieCount();
