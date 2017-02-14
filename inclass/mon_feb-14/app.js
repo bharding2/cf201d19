@@ -37,7 +37,7 @@ function CookieStore(name, minCustomers, maxCustomers, avgCookiesPerCustomer, ho
   this.minCustomers = minCustomers;
   this.maxCustomers = maxCustomers;
   this.avgCookiesPerCustomer = avgCookiesPerCustomer;
-  this.hourlyCount = hourlyCount;
+  this.hourlyCount = hourlyCount || [];
   this.range = maxCustomers - minCustomers;
 };
 
