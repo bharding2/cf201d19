@@ -8,6 +8,7 @@ var myUser = {
   numberOfFollowers: 5,
   email: 'ben@ben.bn',
   tweets: myTweets,
+  myArray: [],
 
   login: function() {
     console.log(fullName + ' has now logged in!');
@@ -15,3 +16,18 @@ var myUser = {
 };
 
 myUser.email = 'ben@ben.ben';
+
+var userElement = document.createElement('h1');
+
+userElement.setAttribute('id', 'first-user-heading');
+
+var sectionEl = document.getElementById('main-content');
+
+sectionEl.appendChild(userElement);
+
+var storeHours = [
+  '6:00 AM',
+  '7:00 AM'
+];
+
+storeHours[i];
