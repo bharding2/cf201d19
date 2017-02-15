@@ -70,8 +70,7 @@ function handleSubmit(event) {
   var maxCust = parseInt(event.target.maxCust.value);
   var avgCookies = parseFloat(event.target.avgCookies.value);
 
-  console.log(newStoreName);
-  console.log(minCust);
-  console.log(maxCust);
-  console.log(avgCookies);
+  var store = new CookieStore(storeName, minCust, maxCust, avgCookies);
+
+  console.log(store);
 };
