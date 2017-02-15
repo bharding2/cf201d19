@@ -60,6 +60,8 @@ var storeFormEl = getElementById('new-store-form');
 storeFormEl.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
+  console.log(event);
+
   event.preventDefault();
   event.stopPropagation();
 };
