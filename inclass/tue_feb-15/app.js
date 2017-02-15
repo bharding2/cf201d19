@@ -66,9 +66,9 @@ function handleSubmit(event) {
   event.stopPropagation();
 
   var newStoreName = event.target.cookieStoreName.value;
-  var minCust = event.target.minCust.value;
-  var maxCust = event.target.maxCust.value;
-  var avgCookies = event.target.avgCookies.value;
+  var minCust = parseInt(event.target.minCust.value);
+  var maxCust = parseInt(event.target.maxCust.value);
+  var avgCookies = parseFloat(event.target.avgCookies.value);
 
   console.log(newStoreName);
   console.log(minCust);
