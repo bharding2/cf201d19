@@ -55,12 +55,13 @@ otherStore.getAvgCookieCount();
 
 console.log(pikePlace.hourlyCount[0]);
 
-var storeFormEl = getElementById('new-store-form');
+var storeFormEl = document.getElementById('new-store-form');
 
 storeFormEl.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   console.log(event);
+  console.log(event.target.cookieStoreName.value);
 
   event.preventDefault();
   event.stopPropagation();
