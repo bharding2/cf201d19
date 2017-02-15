@@ -54,3 +54,12 @@ pikePlace.getAvgCookieCount();
 otherStore.getAvgCookieCount();
 
 console.log(pikePlace.hourlyCount[0]);
+
+var storeFormEl = getElementById('new-store-form');
+
+storeFormEl.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  event.stopPropagation();
+};
